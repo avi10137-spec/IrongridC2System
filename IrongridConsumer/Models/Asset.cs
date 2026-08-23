@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,18 @@ namespace IrongridConsumer.Models
 {
     public class Asset
     {
-        public int AssetId { get; set; }
-        public string AssetType { get; set; }
-        public string RawValue { get; set; }
-        public DateTime Timestamp { get; set; }
-        [ForeignKey]
+        [Key]
+        [Required]
+        public int Id { get; set; }
+        
+        public int UnitId { get; set; }
+       
+        [Required]
+
+        public string AssetSerial { get; set; } = string.Empty;
+        public string? AssetType { get; set; } = "GenericAsset";
+
+
 
     }
 }

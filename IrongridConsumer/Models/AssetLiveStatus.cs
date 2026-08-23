@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IrongridConsumer.Models
 {
-    public class AssetLiveStatus
+    public class AssetLiveInStatus
     {
         [Key]
         public int AssetId { get; set; }

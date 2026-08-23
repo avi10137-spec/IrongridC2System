@@ -13,6 +13,6 @@ namespace IrongridConsumer.Models
         public int Id { get; set; }
         public string? UnitName { get; set; } = "Unknown Unit";
         public string? Sector { get; set; } = "General";
-        public ICollection <Asset> Assets { get; set; }
+        
     }
 }
